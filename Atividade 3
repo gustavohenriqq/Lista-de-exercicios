@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    
+    Double raio;
+    Double pi = 3.1415;
+    Double area;
+    
+    Scanner	entrada = new Scanner(System.in);
+    
+    System.out.println("Digite o raio do seu círculo:");
+    raio = entrada.nextDouble();
+    
+    area = pi * raio * pi;
+    
+    System.out.println("A área do seu circulo é:" + area);
+    
+  }
+}
