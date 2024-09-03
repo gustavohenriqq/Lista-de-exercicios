@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner	entrada = new Scanner(System.in);
+    
+    Double umReal = 4.95;
+    Double dolar;
+    Double real;
+
+    System.out.println("Quantos dolares?");
+    dolar = entrada.nextDouble();
+    
+    real = umReal * dolar;
+   
+    System.out.println("Seu valor em real é: " + "R$" + real);
+   
+  }
+}
