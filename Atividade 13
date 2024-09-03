@@ -1,0 +1,45 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Digite a largura da área (em metros): ");
+        double larguraArea = scanner.nextDouble();
+        
+        System.out.print("Digite o comprimento da área (em metros): ");
+        double comprimentoArea = scanner.nextDouble();
+
+        
+        System.out.print("Digite a largura da cerâmica (em metros): ");
+        double larguraCeramica = scanner.nextDouble();
+        
+        System.out.print("Digite o comprimento da cerâmica (em metros): ");
+        double comprimentoCeramica = scanner.nextDouble();
+
+        
+        System.out.print("Digite o valor do metro quadrado da cerâmica (em reais): R$ ");
+        double valorMetroQuadrado = scanner.nextDouble();
+
+        
+        double areaTotal = larguraArea * comprimentoArea;
+
+        
+        double areaCeramica = larguraCeramica * comprimentoCeramica;
+
+        
+        double quantidadeSemAcabamento = areaTotal / areaCeramica;
+
+        
+        double quantidadeComAcabamento = Math.ceil(quantidadeSemAcabamento * 1.10);
+
+        
+        double valorTotal = quantidadeComAcabamento * areaCeramica * valorMetroQuadrado;
+
+        
+        System.out.printf("Você precisará de aproximadamente %.0f cerâmicas.%n", quantidadeComAcabamento);
+        System.out.printf("O valor total a ser pago é: R$ %.2f%n", valorTotal);
+    
+  }
+}
