@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    
+   	Scanner scanner = new Scanner(System.in);
+    
+    System.out.print("Digite o número de canetas compradas: ");
+        int n = scanner.nextInt();
+    
+    System.out.print("Digite o valor da nota em reais: ");
+        double z = scanner.nextDouble();
+    
+    System.out.print("Digite o valor do troco em reais: ");
+        double y = scanner.nextDouble();
+    
+    double custoTotal = z - y;
+    double custoPorCaneta = custoTotal / n;
+    
+    System.out.printf("O custo de cada caneta é: R$ %.2f%n", custoPorCaneta);
+    
+  }
+}
