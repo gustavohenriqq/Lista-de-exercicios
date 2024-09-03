@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.print("Digite a hora no formato HH:MM: ");
+    String hora = scanner.nextLine();
+    
+    String[] partes = hora.split(":");
+    int horas = Integer.parseInt(partes[0]);
+    int minutos = Integer.parseInt(partes[1]);
+    
+    int minutosDesdeMeiaNoite = (horas * 60) + minutos;
+    
+    System.out.printf("Se passaram %d minutos desde o início do dia.%n", minutosDesdeMeiaNoite);
+    
+    
+  }
+}
