@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Digite o preço da gasolina: R$ ");
+    double precoGasolina = scanner.nextDouble();
+    
+    System.out.print("Digite o preço do etanol: R$ ");
+ 	double precoEtanol = scanner.nextDouble();
+    
+    double relacaoPreco = precoEtanol / precoGasolina;
+    
+    if (relacaoPreco < 0.7) {
+      System.out.println("Abasteça com etanol."); 
+      } else {
+            System.out.println("Abasteça com gasolina.");
+        }
+    
+  }
+}
